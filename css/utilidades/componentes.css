@@ -16,6 +16,8 @@
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
@@ -39,6 +41,11 @@
   height: 10px;
   margin-left: 12px;
   background: url("../../img/icones/seta.svg");
+  transition: transform 0.2;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
 }
 
 .secundario:hover {

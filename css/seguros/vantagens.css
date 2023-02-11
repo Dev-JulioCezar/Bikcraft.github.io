@@ -1,0 +1,43 @@
+#seguros .tecnologia-bg {
+  background: var(--cor-12);
+  box-shadow: none;
+  --offset:120px
+}
+
+
+.vantagens {
+  padding-top: var(--offset);
+  padding-bottom: var(--offset);
+}
+
+.vantagens h2 {
+  margin-bottom: 92px;
+}
+
+.vantagens h3 {
+  font-weight: 600;
+}
+
+#seguros .tecnologia-vantagens {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.vantagens img {
+  max-width: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width:900px) {
+  #seguros .tecnologia-vantagens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #seguros .tecnologia-bg {
+    --offset:60px
+  }
+
+  .vantagens h2 {
+    margin-bottom: 42px;
+  }
+}

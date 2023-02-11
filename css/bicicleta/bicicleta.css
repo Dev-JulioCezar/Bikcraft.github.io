@@ -1,0 +1,174 @@
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#bicicleta .titulo p {
+  text-transform: uppercase;
+}
+
+.bicicleta-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-img img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-img img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta h2 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.015;
+}
+
+.bicicleta p {
+  margin-bottom: 32px;
+}
+
+.comprar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.comprar span {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: max-content;
+  gap: 12px;
+  background: var(--cor-12);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.span-info {
+  display: grid;
+  gap: 8px;
+}
+
+#bicicleta .tecnologia-vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  margin-bottom: 40px;
+  background: var(--cor-12);
+  border-radius: 5px;
+}
+
+.bicicleta ul {
+  background: var(--cor-12);
+  padding: 32px;
+  display: grid;
+  border-radius: 5px;
+}
+
+.bicicleta ul span {
+  color: var(--cor-6);
+}
+
+.bicicleta li {
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+.bicicleta li:last-child {
+  border-bottom: none;
+}
+
+
+.seguro-bg {
+  background: var(--cor-11);
+  box-shadow:inset 0px 100px var(--cor-0),inset 0px -100px var(--cor-12);
+}
+
+.seguro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.seguro-conteudo{
+  padding-bottom: 130px;
+  padding-top: 130PX;
+}
+
+.seguro-bg h2 {
+  margin-bottom: 32px;
+  max-width: 13ch;
+}
+
+.seguro-bg p {
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .comprar {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-img {
+    grid-row: 2;
+  }
+
+  .bicicleta-img {
+    flex-wrap: initial;
+    overflow-x: auto;
+  }
+
+  .bicicleta-img img {
+    min-width: initial;
+  }
+
+  .seguro {
+    grid-template-columns: 1fr;
+  }
+
+  .seguro-conteudo{
+    padding-bottom: 0PX;
+    padding-top: 60PX;
+  }
+
+  .seguro-img {
+    grid-row: 2;
+  }
+
+  .seguro-bg h2{
+    max-width: initial;
+  }  
+  .seguro-bg{
+    box-shadow:inset 0px -120px var(--cor-12);
+  }
+}
+
+@media (max-width: 400px) {
+  #bicicleta .tecnologia-vantagens {
+    grid-template-columns: 1fr;
+  }
+}

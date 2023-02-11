@@ -10,7 +10,6 @@
   padding-bottom: 120px;
   align-items: center;
 }
-
 .seguros h2 {
   grid-column: 1/-1;
   margin-bottom: 20px;
@@ -55,6 +54,15 @@
   position: absolute;
   left: -21px;
 }
+
+#seguros .seguros {
+  padding-top: 0px;
+}
+
+#seguros .seguros-item {
+  border-radius: 5px;
+}
+
 
 @media (max-width:900px) {
   .seguros {
