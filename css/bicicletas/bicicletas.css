@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  background: url("../../img/dec/top-right.svg") no-repeat right top 40px;
 }
 
 .bicicletas-conteudo li {

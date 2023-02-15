@@ -66,6 +66,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.titulo{
+  background: url("../../img/dec/top-right.svg") no-repeat right top;
+}
+
 .titulo p {
   margin-bottom: 8px;
 }
